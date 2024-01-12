@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx.h" 
 
+#include "led.h"
 
 /** @addtogroup Template_Project
   * @{
@@ -41,7 +42,13 @@
   */
 int main(void)
 {
- 
+	InitLed();
+	
+	LedCtrl(LED1,TRUE);
+	LedCtrl(LED2,TRUE);
+	LedCtrl(LED3,TRUE);
+	LedCtrl(LED4,TRUE);
+
   while (1)
   {
 		

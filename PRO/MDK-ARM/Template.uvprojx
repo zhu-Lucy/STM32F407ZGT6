@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F40_41xxx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Core;..\..\STM32F4xx_FWLIB\inc;..\..\USER</IncludePath>
+              <IncludePath>..\..\Core;..\..\STM32F4xx_FWLIB\inc;..\..\USER;..\..\DeviceDriver\led;..\..\Common</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -423,6 +423,19 @@
               <FileName>stm32f4xx_gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\STM32F4xx_FWLIB\src\stm32f4xx_gpio.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Common</GroupName>
+        </Group>
+        <Group>
+          <GroupName>DeviceDriver</GroupName>
+          <Files>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DeviceDriver\led\led.c</FilePath>
             </File>
           </Files>
         </Group>

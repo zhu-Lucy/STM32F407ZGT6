@@ -34,3 +34,5 @@
 .\objects\main.o: ..\..\STM32F4xx_FWLIB\inc\stm32f4xx_dac.h
 .\objects\main.o: ..\..\STM32F4xx_FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\main.o: ..\..\STM32F4xx_FWLIB\inc\stm32f4xx_fsmc.h
+.\objects\main.o: ..\..\DeviceDriver\led\led.h
+.\objects\main.o: ..\..\Common\ComType.h
